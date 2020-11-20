@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartiecards">
+
+    <supports-screens android:resizeable="true" />
+    <supports-screens android:smallScreens="true" />
+    <supports-screens android:normalScreens="true" />
+    <supports-screens android:largeScreens="true" />
+    <supports-screens android:anyDensity="true" />
+
+    <uses-sdk tools:overrideLibrary="com.facebook" />
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission  android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+
+
+
+    <application
+        tools:node="merge"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,icon,theme,label,name"
+
+        android:name=".Controller"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:usesCleartextTraffic="true">
+
+
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+        <activity android:name=".PagerDemo2"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".account.Splash"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".account.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+        <activity android:name=".account.RegisterActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".account.ForgotPassword"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".account.ProfileActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+        <activity android:name=".account.EditProfileActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+        <activity android:name=".settings.ChangePassword"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+        <activity android:name=".settings.WebActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+        <activity android:name=".home.FlashCardLists"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".home.FlashCardFlip"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+        </activity>
+
+
+
+        <activity android:name=".dashboard.PaymentHistory"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".home.PayNowScreen"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+
+        <activity android:name=".dashboard.MySubject"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".account.ImageZoom"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".home.AddCoupon"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+
+        <activity android:name=".home.MultiplePaymentActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".dashboard.MyGames"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".game.GamesSubjectActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+
+        <activity android:name=".game.GameSubjectTopic"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".game.GameShuffle"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+
+        <activity android:name=".game.GameShuffleFlip"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".game.GameMatches"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".game.GameTimed"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+        <activity android:name=".game.GameTimed2"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+        <activity android:name=".dashboard.BannerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".game.BannerGameActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".game.ResultGameActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+        <activity android:name=".game.ResultCheckActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+        <activity android:name=".account.Demo"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+        <activity android:name=".home.FullTextActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar">
+
+        </activity>
+
+
+
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+
+        </service>
+
+
+        <service
+            android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+        <receiver android:name=".fcm.MyReciever" android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" ></action>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.smartiecards"/>
+            </intent-filter>
+        </receiver>
+
+
+        <service android:name=".fcm.OnClearFromRecentService"
+            android:stopWithTask="false" />
+
+
+
+
+        <service android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <!--<activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />-->
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+
+
+
+
+
+
+
+
+
+
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+           />
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.geo.API_KEY"-->
+            <!--android:value="AIzaSyCQDe4bd_OAeZzPZ8MReskJxY9s8-Icp7M"/>-->
+
+
+
+    </application>
+
+</manifest>

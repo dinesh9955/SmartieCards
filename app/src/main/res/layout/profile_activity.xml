@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sssss"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl111"
+        android:visibility="visible"
+
+        >
+        <include
+            layout="@layout/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl111">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/malecostume_64"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/colorPrimary"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+
+
+                <EditText
+                    android:id="@+id/login_fname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:drawableLeft="@drawable/username"
+                    android:hint="First Name"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/text_hint"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_below="@+id/profile_image"
+                    android:singleLine="true"
+                    android:visibility="visible"
+                    android:focusable="false"
+                    android:editable="false"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/login_lname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:drawableLeft="@drawable/username"
+                    android:hint="Last Name"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/text_hint"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_below="@+id/login_fname"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/login_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:drawableLeft="@drawable/username"
+                    android:hint="Username"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/text_hint"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_below="@+id/login_lname"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    />
+
+
+
+
+                <EditText
+                    android:id="@+id/login_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:drawableLeft="@drawable/email"
+                    android:hint="Email"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/text_hint"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_below="@+id/login_username"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:focusable="false"
+                    android:editable="false"
+                    />
+
+
+                <Button
+                    android:id="@+id/button678789789"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/login_email"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:text="@string/login_dob"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left|center_vertical"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/dobicon"
+                    android:focusable="false"
+                    android:editable="false"/>
+
+
+
+
+
+                <EditText
+                    android:id="@+id/login_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:hint="Address"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/text_hint"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_below="@+id/button678789789"
+                    android:gravity="left|top"
+                    android:focusable="false"
+                    android:editable="false"
+                    />
+
+
+
+
+                <EditText
+                    android:id="@+id/login_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:drawableLeft="@drawable/email"
+                    android:hint="City"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/text_hint"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_below="@+id/login_address"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:focusable="false"
+                    android:editable="false"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/login_country"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:drawableLeft="@drawable/email"
+                    android:hint="Country"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/text_hint"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_below="@+id/login_city"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar1444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

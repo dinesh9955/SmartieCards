@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/colorAccent"
+        android:padding="13dp">
+
+        <ImageView
+            android:id="@+id/imageView25345345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/textView253456456"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageView25345345"
+            android:text="Dashboard"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            tools:ignore="MissingPrefix" />
+
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view12341234"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+       android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/text_hint"
+        android:visibility="gone" />
+</LinearLayout>

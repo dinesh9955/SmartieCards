@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sssss"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl111"
+        android:visibility="gone"
+
+        >
+        <include
+            layout="@layout/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl111">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView12234"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/logo"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+
+
+
+
+                <EditText
+                    android:id="@+id/login_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:drawableLeft="@drawable/username"
+                    android:hint="Username"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/text_hint"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_below="@+id/imageView12234"
+                    android:singleLine="true"
+                    />
+
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/login_username"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/fade_green_border_corner_round"
+                    android:drawableLeft="@drawable/pwd"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="15dp" />
+
+
+
+                <TextView
+                    android:id="@+id/textView23423545"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/login_password"
+                    android:text="@string/login_forgot_password"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/blue"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/button6546"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView23423545"
+                    android:background="@drawable/orange_selector"
+                    android:text="@string/login_signin"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="true"/>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/main_relative332"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button6546"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView3453465546"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_dont_have_signup"
+                        android:textAllCaps="false"
+                        android:textColor="@color/bangan"
+                        android:textSize="16dp" />
+
+
+                    <TextView
+                        android:id="@+id/textView2353453"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_signup"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+
+
+                <ImageView
+                    android:id="@+id/button656456746"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                  android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/main_relative332"
+                    android:src="@drawable/fb"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="true"/>
+
+                <ImageView
+                    android:id="@+id/button6654654"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/button656456746"
+                    android:src="@drawable/gp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="true"/>
+
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

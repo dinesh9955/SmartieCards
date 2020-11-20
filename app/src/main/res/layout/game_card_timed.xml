@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sssss"
+    android:background="@drawable/bg"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl111"
+        android:visibility="visible"
+        app:layout_scrollFlags="scroll|enterAlways"
+        >
+        <include
+            layout="@layout/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl111"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rela122"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView23535356"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="0" />
+
+
+            <TextView
+                android:id="@+id/textView96786878"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Total 1/1" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rela1566"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/button414234"
+                android:layout_below="@+id/rela122"
+               >
+
+
+
+                <ScrollView
+                    android:id="@+id/scroll1566"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/rela1654667"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        >
+
+
+
+                        <TextView
+                            android:id="@+id/textView567456467"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:text="Que" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:layout_below="@+id/textView567456467"
+                        android:layout_marginTop="10dp"/>
+
+                    </RelativeLayout>
+
+
+                </ScrollView>
+
+
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar1444"
+                    style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/textView123124"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/button414234"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/black_selector"
+                android:text="Next"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="13dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimaryDark">#38c76f</color>
+    <color name="colorPrimary">#278b4e</color>
+    <color name="colorAccent">#60d28c</color>
+
+    <color name="colorAccentDark40" tools:ignore="MissingDefaultResource">#227743</color>
+
+
+    <color name="full_transparent">#00000000</color>
+    <color name="transparent_20">#8060d28c</color>
+    <color name="white_transparent">#99ffffff</color>
+    <color name="white_transparent_23">#80ffffff</color>
+
+    <color name="candidate_normal">#FF000000</color>
+    <color name="candidate_recommended">#FFE35900</color>
+    <color name="candidate_other">#ff808080</color>
+    <color name="candidate_background">#bbffffff</color>
+    <color name="yellow">#bbFFC107</color>
+    <color name="purple">#bba807ff</color>
+
+
+    <color name="text_hint">#e6e6e6</color>
+
+    <color name="list_background">#4579a1</color>
+
+    <color name="white">#FFffff</color>
+    <color name="black">#000000</color>
+
+
+    <color name="orange_dark_bg_color">#ff682c</color>
+    <color name="orange_dark_hover_color">#ff7f4d</color>
+
+    <color name="blue_bg_color_stroke">#55ffffff</color>
+    <color name="blue_bg_color_stroke_fade">#26ffffff</color>
+
+
+    <color name="red">#ff0000</color>
+    <color name="blue">#375895</color>
+    <color name="bangan">#4445be</color>
+
+    <color name="button_black">#000000</color>
+    <color name="button_black_fade">#333333</color>
+
+    <color name="shadow_color">#e6e6e6</color>
+
+    <color name="white_alpha_40">#80ffffff</color>
+    <color name="black_alpha_40">#0D000000</color>
+    <color name="black_alpha_white_40">#40000000</color>
+
+    <color name="green_bg_color">#46a046</color>
+    <color name="green_hover_color">#5cb75c</color>
+
+
+    <color name="green_fade_bg_color">#6674d89a</color>
+    <color name="green_fade_hover_color">#39ac73</color>
+
+</resources>

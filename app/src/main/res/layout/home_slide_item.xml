@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/layoutback"
+
+    >
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        >
+
+        <com.smartiecards.util.ShadowLayout
+            android:id="@+id/second1233"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:sl_shadow_color="@color/black"
+
+
+            >
+
+
+
+         <RelativeLayout
+                    android:id="@+id/second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+             >
+
+
+
+
+                    <ScrollView
+                        android:id="@+id/secondScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:visibility="visible">
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/secondLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView345646"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="40dp"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:layout_marginTop="20dp"/>
+
+                            <ImageView
+                                android:id="@+id/imageView6456"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_gravity="center_horizontal|top"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                >
+
+                            </ImageView>
+
+
+                            <ImageView
+                                android:id="@+id/imageView54356"
+                                android:layout_width="150dp"
+                                android:layout_height="250dp"
+                                android:adjustViewBounds="true"
+                                android:layout_gravity="center_horizontal|top"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/clerify1"
+                                android:visibility="gone"
+                                >
+
+                            </ImageView>
+
+
+                            <WebView
+                                android:id="@+id/webView1354"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:scrollbars="none"
+                                android:visibility="gone"
+                                >
+
+
+                            </WebView>
+
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+
+         </RelativeLayout>
+
+</com.smartiecards.util.ShadowLayout>
+
+
+        <com.smartiecards.util.ShadowLayout
+            android:id="@+id/second44455"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:sl_shadow_color="@color/black"
+            >
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <ScrollView
+                android:id="@+id/firstScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/firstLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView345645435345"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="22dp"
+                        android:textColor="@color/black"
+                        android:visibility="gone"
+                        android:layout_marginTop="20dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/imageView64564325"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center_horizontal|top"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        >
+                    </ImageView>
+
+
+                    <ImageView
+                        android:id="@+id/imageView75667"
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center_horizontal|top"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/clerify2"
+                        android:visibility="gone"
+                        >
+
+                    </ImageView>
+
+                    <WebView
+                        android:id="@+id/webView5466"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scrollbars="none"
+                        android:visibility="gone"
+                        >
+
+
+                    </WebView>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        </com.smartiecards.util.ShadowLayout>
+    </ViewFlipper>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/shadow_color"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="0dp"
+        card_view:contentPadding="5dp"
+        card_view:cardBackgroundColor="@android:color/background_light"
+       android:layout_margin="2dp"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/lelativeLayout12334"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            >
+
+
+
+            <RelativeLayout
+                android:id="@+id/lelativeLayout123"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <com.smartiecards.util.SquareImageViewGrid1
+                    android:id="@+id/imageView6456"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+               >
+
+                </com.smartiecards.util.SquareImageViewGrid1>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout234353"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/imageView6456"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone"
+                    android:background="@color/white_alpha_40"
+                    android:orientation="vertical">
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lelativeLayout34534"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lelativeLayout123"
+                android:layout_marginTop="5dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/textView46456"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Business \n$80/Year"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:lines="2"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/textView4645667"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/textView46456"
+                    android:visibility="gone"
+                    android:layout_marginBottom="5dp"
+                    android:lines="2"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView4645667"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shape_drop_down_normal_round"
+                    android:drawablePadding="10dp"
+                    android:dropDownWidth="fill_parent"
+                    android:hint="Select"
+                    android:paddingLeft="0dp"
+                    android:popupBackground="@color/green_fade_hover_color"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"/>
+
+
+                <Button
+                    android:id="@+id/button414234"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+               android:layout_below="@+id/spinner"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/black_selector"
+                    android:text="Buy Now"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp"
+                    android:layout_marginTop="0dp"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

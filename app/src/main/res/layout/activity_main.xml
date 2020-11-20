@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl111"
+        tools:ignore="MissingPrefix">
+        <include
+            layout="@layout/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl111"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+        <android.support.v4.widget.DrawerLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:openDrawer="start">
+
+
+
+            <RelativeLayout
+                android:id="@+id/main_relative21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/main_relative2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    >
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/layout0000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffafe9c5">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+              >
+
+                        <RelativeLayout
+                            android:id="@+id/layout111"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <RelativeLayout
+                                android:id="@+id/view_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:visibility="visible">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/profile_image"
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:src="@drawable/malecostume_64"
+                                    app:civ_border_width="1dp"
+                                    app:civ_border_color="@color/colorPrimary"
+                                    android:layout_centerHorizontal="true"/>
+
+                                <TextView
+                                    android:text=""
+                                    android:textColor="@color/colorAccentDark40"
+                                    android:textSize="18dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:id="@+id/textView2_23"
+                                    android:layout_below="@+id/profile_image"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center_horizontal"
+                                    android:textStyle="bold"
+                                    tools:ignore="MissingPrefix" />
+
+
+                                <View
+
+                                    android:background="@android:color/white"
+                                    android:textSize="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="10dp"
+                                    android:id="@+id/view45345"
+                                    android:layout_below="@+id/textView2_23"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center_horizontal"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/layout222"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/view_container"
+                                android:padding="5dp">
+
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recycler_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                    android:visibility="visible"
+                                    />
+
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar1444"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:visibility="gone"
+                                    style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </ScrollView>
+
+
+                </RelativeLayout>
+
+
+
+            </android.support.design.widget.NavigationView>
+
+
+
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+

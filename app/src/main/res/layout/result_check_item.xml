@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/shadow_color"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="0dp"
+        card_view:contentPadding="5dp"
+        card_view:cardBackgroundColor="@android:color/background_light"
+        android:layout_margin="2dp"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/lelativeLayout12334"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/lelativeLayout34534"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/textView46456"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="1) Visible characteristics"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/textView5345466"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="You answered: When water is plentiful, the seed fills with water in a process called imbibition. The water activates special proteins, called enzymes, that begin the process of seed growth. First the seed grows a root to access water underground. Next, the shoots, or g"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:layout_below="@+id/textView46456"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/textView65465467"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Wrong Answer!!!"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView5345466"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

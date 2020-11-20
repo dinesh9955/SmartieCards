@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sssss"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl111"
+        android:visibility="visible"
+
+        >
+        <include
+            layout="@layout/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl111"
+        android:padding="10dp">
+
+
+
+        <RelativeLayout
+            android:id="@+id/relative2534554"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relative23534564"
+            android:layout_marginTop="0dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                >
+
+            </android.support.v4.view.ViewPager>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar1444"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/textView123124"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/button2534565"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/icn_rating_start_fade_yellow"
+                android:visibility="visible" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/relative23534564"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_border_corner_round"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/button276878"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back4"
+                android:layout_margin="5dp"
+                android:text="Prev" />
+
+            <ImageView
+                android:id="@+id/button3657"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/next4"
+                android:layout_margin="5dp"
+                android:text="Next" />
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative23244"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/button3657"
+                android:layout_toRightOf="@+id/button276878"
+                android:padding="0dp">
+
+                <SeekBar
+                    android:id="@+id/seekBar235435"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:max="0"
+                    android:progress="0"
+                    android:theme="@style/MySeekBar" />
+
+                <TextView
+                    android:id="@+id/textView25345"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seekBar235435"
+                    android:layout_centerHorizontal="true"
+                    android:text="0/0"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/button543452"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView25345"
+                    android:layout_alignParentStart="true"
+                    android:text="Play"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/button3547567"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView25345"
+                    android:layout_alignParentEnd="true"
+                    android:text="Suffle"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/button3657"
+                android:layout_toRightOf="@+id/button276878"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button25345646"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/star_yellow"
+                    android:text="Star Card"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/green_without_round_selector"
+                    android:layout_marginRight="1dp"
+                    android:padding="8dp"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    />
+
+                <Button
+                    android:id="@+id/button253456546"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/star_yellow"
+                    android:text="View Starred Cards"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/green_without_round_selector"
+                    android:layout_marginLeft="1dp"
+                    android:padding="8dp"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    />
+
+                <Button
+                    android:id="@+id/button65465"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:drawableLeft="@drawable/star_yellow"
+                    android:text="Unstar Card"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/green_without_round_selector"
+                    android:layout_marginLeft="1dp"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:minWidth="150dp"
+                    android:textColor="@color/white"
+                    android:singleLine="true"/>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

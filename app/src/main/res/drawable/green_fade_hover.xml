@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    >
+<!--this is to give gradient effect -->
+<gradient   android:angle="270"
+               android:startColor="@color/green_fade_hover_color"
+               android:endColor="@color/green_fade_hover_color"
+               />
+<!-- this is make corners of button rounded -->
+    <corners    android:topLeftRadius="10dip"
+        android:bottomRightRadius="10dip"
+        android:topRightRadius="10dip"
+        android:bottomLeftRadius="10dip"/>
+
+
+</shape>
